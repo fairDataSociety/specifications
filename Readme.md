@@ -1,5 +1,44 @@
 # Specification for Fairdrive
-![image alt](https://github.com/fairDataSociety/specifications/blob/master/images/Fair%20Data%20Society.jpeg "title")
+<img width="220" height="250" src="images/Fair%20Data%20Society.jpeg">
+
+Table of Contents
+=================
+   * [Fair data](#fair-data)
+   * [Fair Data Society](#fair-data-society)
+   * [Fairdrive](#fairdrive)
+      * [Storage Layer](#storage-layer)
+         * [Decentralised](#decentralised)
+         * [Fault Tolerant](#fault-tolerant)
+         * [Censorship-resistant](#censorship-resistant)
+         * [Self-sustaining](#self-sustaining)
+      * [Permission & Consent Layer](#permission--consent-layer)
+   * [Fairdrive Functionality and Use cases](#fairdrive-functionality-and-use-cases)
+      * [Data Access](#data-access)
+      * [Permissions](#permissions)
+      * [Incentivisation](#incentivisation)
+   * [Types of data stored in Fairdrive](#types-of-data-stored-in-fairdrive)
+      * [User-generated data](#user-generated-data)
+      * [Application-generated data](#application-generated-data)
+   * [Fairdrive compared to other options](#fairdrive-compared-to-other-options)
+   * [Reference Implementation](#reference-implementation)
+      * [Functional Architecture](#functional-architecture)
+         * [Fairdrive SDK (fds.js)](#fairdrive-sdk-fdsjs)
+         * [Noordung Chain](#noordung-chain)
+         * [Smart Contract](#smart-contract)
+         * [Swarm as a storage Layer](#swarm-as-a-storage-layer)
+            * [Fault tolerance](#fault-tolerance)
+            * [Censorship-resistant](#censorship-resistant-1)
+            * [DDoS-resistant](#ddos-resistant)
+            * [Zero downtime](#zero-downtime)
+            * [Self-sustaining](#self-sustaining-1)
+   * [Open-source artefacts](#open-source-artefacts)
+   * [Fair Data Society-compliant apps](#fair-data-society-compliant-apps)
+   * [Applications that use Fairdrive](#applications-that-use-fairdrive)
+      * [Fairdrive Webapp (fairdrive.xyz)](#fairdrive-webapp-fairdrivexyz)
+      * [Fairdrop (fairdrop.xyz)](#fairdrop-fairdropxyz)
+      * [Chattie (chattie.xyz)](#chattie-chattiexyz)
+
+
 
 ## Fair data
 Fair data represents a stand for a more equal distribution of control and value for everyone involved in data generation, exchange and processing, with the individual at the centre. It’s a concept which acknowledges that personal data is a part of the individual and can only belong to an individual.
@@ -20,6 +59,9 @@ At its core it has the following subsystems:
 - An SDK to access the data.
 - A set of standards and guidelines covering where data is stored, how it is encoded and how it is encrypted.
 
+<p align="center">
+<img width="650" height="450" src="images/Fairdrive%20layers.png">
+</p>
 
 
 ### Storage Layer
@@ -63,7 +105,9 @@ Following are some of the use cases of Fairdrive.
 ## Types of data stored in Fairdrive
 There are two major actors that use Fairdrive. One is the individual himself and the other are the applications that he/she uses.
 
-
+<p align="center">
+<img width="650" height="450" src="images/Typed%20of%20data%20in%20Fairdrive.png">
+</p>
 
 ### User-generated data
 An individual can directly store or retrieve files and documents in Fairdrive, similar to other cloud storages, like Dropbox or Google Drive. To make this easier, there will be a web-app (fairdrive.xyz) and a native app to enable the store and retrieve functions. Using this app, the individual can upload and download content or share them with others without anyone else being able to access them.
@@ -84,6 +128,9 @@ To jumpstart the Fairdrive thought process, it is not enough that we just put do
 
 ### Functional Architecture
 
+<p align="center">
+<img width="650" height="450" src="images/Functional%20Architecture.png">
+</p>
 
 #### Fairdrive SDK (fds.js)
 To access Faridrive, we have developed a SDK called fds.js. This SDK exposes APIs to interact with the Fairdrive system. Applications can do the following functionalities with the SDK:
@@ -136,11 +183,17 @@ For programmatic access to Fairdrive, an SDK called fds.js is available. Fds.js 
 
 Next are Fairdrive UI applications; a web-app and a Desktop app. The webapp is hosted on Swarm and is available at fairdrive.xyz. Individuals can use their identity to log into the app and use it from a browser. There is also a native app for popular operating systems which can be installed and configured to continuously run in the background. This architecture is similar to that of Web 2.0 apps like Dropbox.
 
-
+<p align="center">
+<img width="650" height="450" src="images/Open%20source%20artifacts.png">
+</p>
 
 ## Fair Data Society-compliant apps
 
 Applications that intend to use Fairdrive should be Fair Data Society-compliant. By which we mean that the application should only store the individual’s data in Fairdrive and nowhere else. In the graphics below are some of the deployment models that the applications can use today
+
+<p align="center">
+<img width="650" height="450" src="images/FDS%20compliant%20apps.png">
+</p>
 
 
 **API-based** deployment model is similar to Web 2.0 mode. In this model, the application connects to Faidrive using the API exposed by a Fair Data Society-owned centralised server (boxes not in red border). This server runs a node application that exposes the same API that our SDK provides. This server also hosts a Swarm node which is used by the node application. Even though this method is not properly decentralised and does not align with Fair Data Society principles, we have exposed this API to easily test an application using our SDK. This model is only recommended for testing and not for production.
@@ -158,10 +211,17 @@ For example: in the screenshot below you can see the directory structure on the 
 
 This app can be used to upload or download files from/to the individual’s local file system. Individuals can also share their Fairdrive-based files with other individuals or applications. Apart from managing data, this application also has a wallet to show the details of storage-related payments - either incoming or outgoing.
 
+<p align="center">
+<img width="650" height="450" src="images/Fairdrive%20App.png">
+</p>
+
 ### Fairdrop (fairdrop.xyz)
 
 Fairdrop is a fair, secure and unstoppable file transfer application, built with the Fairdrive SDK. It is our original web application, hosted in Swarm. Individuals can create an account and will be assigned a mailbox. The mailbox contains 2 folders, “Received” and “Sent”. Individuals can share a file from their local filesystem with another individual. These files will then be encrypted and sent to the respective individual’s “Received” folder. The sent files will be shown in the “Sent” folder. If anyone shares a file with you, you would see it in the “Received” folder for download to local file system. More about the application here.
 
+<p align="center">
+<img width="650" height="450" src="images/Fairdrop%20App.png">
+</p>
 
 ### Chattie (chattie.xyz)
 
