@@ -58,7 +58,6 @@ At its core it has the following subsystems:
 - A set of smart contracts enforcing permissions and consents.
 - An SDK to access the data.
 - A set of standards and guidelines covering where data is stored, how it is encoded and how it is encrypted.
-
 <p align="center">
 <img width="650" height="450" src="images/Fairdrive%20layers.png">
 </p>
@@ -104,7 +103,6 @@ Following are some of the use cases of Fairdrive.
 
 ## Types of data stored in Fairdrive
 There are two major actors that use Fairdrive. One is the individual himself and the other are the applications that he/she uses.
-
 <p align="center">
 <img width="650" height="450" src="images/Typed%20of%20data%20in%20Fairdrive.png">
 </p>
@@ -127,7 +125,6 @@ Fairdrive gives individuals complete control over their data. Only they can expl
 To jumpstart the Fairdrive thought process, it is not enough that we just put down the specifications for it. We are also working on a Fairdrive reference implementation described above. The components that we chose or implemented are fully decentralised and open-sourced. This is only a reference implementation and others are welcome to add more features and use this as long as they respect the Fair Data Society principles.
 
 ### Functional Architecture
-
 <p align="center">
 <img width="650" height="450" src="images/Functional%20Architecture.png">
 </p>
@@ -182,7 +179,6 @@ To realise the above architecture, we developed the following user-facing artifa
 For programmatic access to Fairdrive, an SDK called fds.js is available. Fds.js enables applications to access almost all of Fairdrive’s functions. 
 
 Next are Fairdrive UI applications; a web-app and a Desktop app. The webapp is hosted on Swarm and is available at fairdrive.xyz. Individuals can use their identity to log into the app and use it from a browser. There is also a native app for popular operating systems which can be installed and configured to continuously run in the background. This architecture is similar to that of Web 2.0 apps like Dropbox.
-
 <p align="center">
 <img width="650" height="450" src="images/Open%20source%20artifacts.png">
 </p>
@@ -190,7 +186,6 @@ Next are Fairdrive UI applications; a web-app and a Desktop app. The webapp is h
 ## Fair Data Society-compliant apps
 
 Applications that intend to use Fairdrive should be Fair Data Society-compliant. By which we mean that the application should only store the individual’s data in Fairdrive and nowhere else. In the graphics below are some of the deployment models that the applications can use today
-
 <p align="center">
 <img width="650" height="450" src="images/FDS%20compliant%20apps.png">
 </p>
@@ -210,7 +205,6 @@ Applications that intend to use Fairdrive should be Fair Data Society-compliant.
 For example: in the screenshot below you can see the directory structure on the left side. The individual’s Fairdrive shown in this example has a “Fairdrop” folder, which was created when he used the Fairdrop application. Similarly, every Fair Data Society-compliant application that he has used in the past would create a separate directory to store the contents of the respective applications. 
 
 This app can be used to upload or download files from/to the individual’s local file system. Individuals can also share their Fairdrive-based files with other individuals or applications. Apart from managing data, this application also has a wallet to show the details of storage-related payments - either incoming or outgoing.
-
 <p align="center">
 <img width="650" height="450" src="images/Fairdrive%20App.png">
 </p>
@@ -218,7 +212,6 @@ This app can be used to upload or download files from/to the individual’s loca
 ### Fairdrop (fairdrop.xyz)
 
 Fairdrop is a fair, secure and unstoppable file transfer application, built with the Fairdrive SDK. It is our original web application, hosted in Swarm. Individuals can create an account and will be assigned a mailbox. The mailbox contains 2 folders, “Received” and “Sent”. Individuals can share a file from their local filesystem with another individual. These files will then be encrypted and sent to the respective individual’s “Received” folder. The sent files will be shown in the “Sent” folder. If anyone shares a file with you, you would see it in the “Received” folder for download to local file system. More about the application here.
-
 <p align="center">
 <img width="650" height="450" src="images/Fairdrop%20App.png">
 </p>
@@ -226,7 +219,9 @@ Fairdrop is a fair, secure and unstoppable file transfer application, built with
 ### Chattie (chattie.xyz)
 
 Chattie is an example chat app built to show how data can be shared between two individuals using Fairdrive. You can use the same account you created in the Fairdrive webapp to login here. A logged-in individual can start a chat with another individual. The messages he/she creates are stored in the current individual’s Fairdrive and are also shared with the individual with whom he/she chats. This ensures that the Chattie application can access the chat messages of the current individual and ones typed by the receiving individual.
-
+<p align="center">
+<img width="650" height="450" src="images/Chattie%20Application.png">
+</p>
 
 
 
