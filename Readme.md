@@ -147,7 +147,9 @@ For book keeping the individual’s permissions and payments in a decentralised 
 
 #### Smart Contract
 
-The Noordung chain hosts a set of smart contracts that actually control the individual’s Fairdrive and its permissions. Another set of smart contracts controls the incentivisation aspect of Fairdrive. People need to pay for storage and also get paid when they share their data for a fee. These payment exchanges are facilitated by smart contracts ina way that makes the system trustless.
+At the core of the Fairdrive is a set of smart contracts that enable interesting additional functionalitiesThey provide a scalable way to share encrypted data in a peer-to-peer manner and gives users the means to write data into the individual’s accounts, along with the ability to categorise that data in a systematic way.
+
+One set of smart contracts  control the individual’s Fairdrive and its permissions. Another set of smart contracts controls the incentivisation aspect of Fairdrive which is paying for the amount of storage used and receiving payments for the data sold.. These payment exchanges are facilitated by smart contracts in a way that makes the system trustless. 
 
 
 #### Swarm as a storage Layer
