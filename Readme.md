@@ -1,8 +1,44 @@
 # Specification for Fairdrive
+<img width="220" height="250" src="images/Fair%20Data%20Society.jpeg">
 
-<p align="center">
-<img width="450" height="450" src="images/Fair%20Data%20Society.jpeg">
-</p>
+Table of Contents
+=================
+   * [Fair data](#fair-data)
+   * [Fair Data Society](#fair-data-society)
+   * [Fairdrive](#fairdrive)
+      * [Storage Layer](#storage-layer)
+         * [Decentralised](#decentralised)
+         * [Fault Tolerant](#fault-tolerant)
+         * [Censorship-resistant](#censorship-resistant)
+         * [Self-sustaining](#self-sustaining)
+      * [Permission & Consent Layer](#permission--consent-layer)
+   * [Fairdrive Functionality and Use cases](#fairdrive-functionality-and-use-cases)
+      * [Data Access](#data-access)
+      * [Permissions](#permissions)
+      * [Incentivisation](#incentivisation)
+   * [Types of data stored in Fairdrive](#types-of-data-stored-in-fairdrive)
+      * [User-generated data](#user-generated-data)
+      * [Application-generated data](#application-generated-data)
+   * [Fairdrive compared to other options](#fairdrive-compared-to-other-options)
+   * [Reference Implementation](#reference-implementation)
+      * [Functional Architecture](#functional-architecture)
+         * [Fairdrive SDK (fds.js)](#fairdrive-sdk-fdsjs)
+         * [Noordung Chain](#noordung-chain)
+         * [Smart Contract](#smart-contract)
+         * [Swarm as a storage Layer](#swarm-as-a-storage-layer)
+            * [Fault tolerance](#fault-tolerance)
+            * [Censorship-resistant](#censorship-resistant-1)
+            * [DDoS-resistant](#ddos-resistant)
+            * [Zero downtime](#zero-downtime)
+            * [Self-sustaining](#self-sustaining-1)
+   * [Open-source artefacts](#open-source-artefacts)
+   * [Fair Data Society-compliant apps](#fair-data-society-compliant-apps)
+   * [Applications that use Fairdrive](#applications-that-use-fairdrive)
+      * [Fairdrive Webapp (fairdrive.xyz)](#fairdrive-webapp-fairdrivexyz)
+      * [Fairdrop (fairdrop.xyz)](#fairdrop-fairdropxyz)
+      * [Chattie (chattie.xyz)](#chattie-chattiexyz)
+
+
 
 ## Fair data
 Fair data represents a stand for a more equal distribution of control and value for everyone involved in data generation, exchange and processing, with the individual at the centre. It’s a concept which acknowledges that personal data is a part of the individual and can only belong to an individual.
