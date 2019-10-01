@@ -1,5 +1,5 @@
 # Specification for Fairdrive
-<img width="220" height="250" src="images/Fair%20Data%20Society.jpeg">
+<img width="220" height="220" src="images/Fair%20Data%20Society.jpeg">
 
 Table of Contents
 =================
