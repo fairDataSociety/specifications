@@ -1,4 +1,4 @@
-# Specification for Fairdrive
+# Specification for Fairdrive (Version 0.0.1)
 <img width="220" height="150" src="images/Fair%20Data%20Society.jpeg">
 
 Table of Contents
@@ -37,8 +37,7 @@ Table of Contents
       * [Fairdrive Webapp (fairdrive.xyz)](#fairdrive-webapp-fairdrivexyz)
       * [Fairdrop (fairdrop.xyz)](#fairdrop-fairdropxyz)
       * [Chattie (chattie.xyz)](#chattie-chattiexyz)
-
-
+   * [Versioning details](#versioning-details)   
 
 ## Fair data
 Fair data represents a stand for a more equal distribution of control and value for everyone involved in data generation, exchange and processing, with the individual at the centre. It’s a concept which acknowledges that personal data is a part of the individual and can only belong to an individual.
@@ -226,5 +225,10 @@ Chattie is an example chat app built to show how data can be shared between two 
 </p>
 
 
+## Versioning details
+
+* Version 0.0.1
+  - First draft version
+  - Added Contributing.md
 
 
