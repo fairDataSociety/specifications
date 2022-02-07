@@ -1,3 +1,5 @@
+REPO IS NOT MAINTANED - ARCHIVING AS READ ONLY
+
 # Specification for Fairdrive (Version 0.0.1)
 <img width="220" height="150" src="images/Fair%20Data%20Society.jpeg">
 
